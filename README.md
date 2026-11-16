@@ -1,6 +1,6 @@
 # PIXEL-DSP v1.2 — P455 MDN Sidecar
 
-![gui](path/to/image.png)
+![gui](1794858366433.jpg)
 
 
 Deterministic vector geometry + raster material reconstruction of the **Pulsar Modular P455 MDN Sidecar** (Marc Daniel Nelson signature console summing plugin).
