@@ -1,0 +1,20 @@
+{
+  "panel": { "width": 920, "height": 520 },
+  "components": [
+    { "id": "meter_l_rms", "x": 24, "y": 24, "w": 148, "h": 112, "z": 10 },
+    { "id": "meter_r_rms", "x": 184, "y": 24, "w": 148, "h": 112, "z": 10 },
+    { "id": "knob_global_inout", "x": 358, "y": 36, "w": 44, "h": 56, "z": 20 },
+    { "id": "knob_bias", "x": 418, "y": 36, "w": 44, "h": 56, "z": 20 },
+    { "id": "eq_bank", "x": 24, "y": 160, "w": 620, "h": 200, "z": 15 },
+    { "id": "comp_row", "x": 24, "y": 380, "w": 620, "h": 112, "z": 15 },
+    { "id": "fader_output_l", "x": 680, "y": 160, "w": 48, "h": 280, "z": 25 },
+    { "id": "fader_output_r", "x": 748, "y": 160, "w": 48, "h": 280, "z": 25 },
+    { "id": "badge_p455", "x": 700, "y": 120, "w": 120, "h": 28, "z": 30 }
+  ],
+  "bridge": {
+    "ai_emits": ["panel.svg", "panel_flat@1x.png", "panel_flat@2x.png", "placement.json"],
+    "ps_receives": ["panel_flat@2x.png as Smart Object @100%", "placement.json → groups & masks"],
+    "ps_exports": ["panel_<state>@1x.png", "panel_<state>@2x.png", "manifest.json"],
+    "code_consumes": ["PNGs only", "never PSD", "never live SVG at runtime"]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "psd": "P455_MDN_Sidecar.psd",
+  "tree": [
+    { "group": "01_PANEL_BG", "layers": ["base_fill", "wood_rails", "edge_highlight"] },
+    { "group": "02_TEXTURE", "layers": ["brushed_metal", "bakelite_hint"] },
+    { "group": "03_GROOVES", "layers": ["meter_bezel_shadow", "eq_recess", "comp_recess"] },
+    {
+      "group": "04_CONTROLS",
+      "children": [
+        {
+          "group": "knob_global_inout",
+          "layers": ["shadow", "ring", "face", "texture", "indicator"]
+        },
+        {
+          "group": "knob_bias",
+          "layers": ["shadow", "ring", "face", "texture", "indicator"]
+        },
+        {
+          "group": "eq_band_1",
+          "layers": ["freq_knob", "gain_knob", "switch_shelf", "switch_mult"]
+        },
+        {
+          "group": "eq_band_2",
+          "layers": ["freq_knob", "gain_knob", "switch_shelf", "switch_mult"]
+        },
+        {
+          "group": "eq_band_3",
+          "layers": ["freq_knob", "gain_knob", "switch_shelf", "switch_mult"]
+        },
+        {
+          "group": "eq_band_4",
+          "layers": ["freq_knob", "gain_knob", "switch_shelf", "switch_mult"]
+        },
+        {
+          "group": "comp_threshold",
+          "layers": ["shadow", "face", "indicator"]
+        },
+        {
+          "group": "comp_attack",
+          "layers": ["shadow", "face", "indicator"]
+        },
+        {
+          "group": "comp_release",
+          "layers": ["shadow", "face", "indicator"]
+        },
+        {
+          "group": "comp_output",
+          "layers": ["shadow", "face", "indicator"]
+        },
+        {
+          "group": "fader_output_l",
+          "layers": ["track", "cap", "shadow"]
+        },
+        {
+          "group": "fader_output_r",
+          "layers": ["track", "cap", "shadow"]
+        }
+      ]
+    },
+    { "group": "05_METERS", "layers": ["vu_l_face", "vu_r_face", "needle_l", "needle_r", "scale_marks"] },
+    { "group": "06_LABELS", "layers": ["badge_p455", "section_labels", "knob_labels"] },
+    { "group": "07_OVERLAYS", "layers": ["vignette", "grain", "color_grade"] },
+    { "group": "99_SOURCE", "layers": ["placement_guides", "panel_svg_link"], "hidden": true }
+  ],
+  "comps": [
+    { "name": "normal", "visibility": "default, all _hover/_active/_bypass off" },
+    { "name": "hover", "visibility": "hover layers on" },
+    { "name": "active", "visibility": "active / pressed layers on" },
+    { "name": "bypass", "visibility": "bypass LED / dimmed face" }
+  ],
+  "exports": {
+    "png": ["1x", "2x"],
+    "per_comp": true,
+    "alpha": "straight",
+    "profile": "sRGB IEC61966-2.1",
+    "bit_depth": 8
+  }
+}

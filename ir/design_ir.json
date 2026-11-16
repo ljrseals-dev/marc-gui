@@ -1,0 +1,160 @@
+{
+  "plugin": "P455 MDN Sidecar",
+  "version": "PIXEL-DSP-v1.2",
+  "panel": {
+    "width": 920,
+    "height": 520,
+    "style": "UAD skeuomorphic / vintage API sidecar",
+    "fill": "dark_metal",
+    "raster_mode": "hybrid"
+  },
+  "primitives": [
+    {
+      "type": "Rect",
+      "x": 0, "y": 0, "w": 920, "h": 520,
+      "fill": "#1a1410",
+      "layer": "01_PANEL_BG"
+    },
+    {
+      "type": "Rect",
+      "x": 8, "y": 8, "w": 904, "h": 504,
+      "fill": "#0e0c0a",
+      "layer": "01_PANEL_BG"
+    },
+    {
+      "type": "Group",
+      "id": "meter_l_rms",
+      "state": "normal",
+      "children": [
+        { "type": "Rect", "x": 24, "y": 24, "w": 148, "h": 112, "fill": "#12100e", "layer": "meter_l_rms" },
+        { "type": "Rect", "x": 24, "y": 24, "w": 148, "h": 1, "fill": "#3a3530", "layer": "meter_l_rms" },
+        { "type": "Rect", "x": 24, "y": 135, "w": 148, "h": 1, "fill": "#3a3530", "layer": "meter_l_rms" },
+        { "type": "Rect", "x": 24, "y": 24, "w": 1, "h": 112, "fill": "#3a3530", "layer": "meter_l_rms" },
+        { "type": "Rect", "x": 171, "y": 24, "w": 1, "h": 112, "fill": "#3a3530", "layer": "meter_l_rms" },
+        { "type": "Text", "x": 36, "y": 42, "content": "L", "font": "Helvetica", "size": 11, "fill": "#c0b8a8", "anchor": "start", "layer": "meter_l_rms" },
+        { "type": "Text", "x": 150, "y": 42, "content": "dB", "font": "Helvetica", "size": 9, "fill": "#8a8070", "anchor": "end", "layer": "meter_l_rms" }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "meter_r_rms",
+      "state": "normal",
+      "children": [
+        { "type": "Rect", "x": 184, "y": 24, "w": 148, "h": 112, "fill": "#12100e", "layer": "meter_r_rms" },
+        { "type": "Rect", "x": 184, "y": 24, "w": 148, "h": 1, "fill": "#3a3530", "layer": "meter_r_rms" },
+        { "type": "Rect", "x": 184, "y": 135, "w": 148, "h": 1, "fill": "#3a3530", "layer": "meter_r_rms" },
+        { "type": "Rect", "x": 184, "y": 24, "w": 1, "h": 112, "fill": "#3a3530", "layer": "meter_r_rms" },
+        { "type": "Rect", "x": 331, "y": 24, "w": 1, "h": 112, "fill": "#3a3530", "layer": "meter_r_rms" },
+        { "type": "Text", "x": 196, "y": 42, "content": "R", "font": "Helvetica", "size": 11, "fill": "#c0b8a8", "anchor": "start", "layer": "meter_r_rms" }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "knob_global_inout",
+      "state": "normal",
+      "children": [
+        { "type": "Ellipse", "cx": 380, "cy": 58, "r": 22, "fill": "#2a2420", "layer": "knob_global_inout" },
+        { "type": "Ellipse", "cx": 380, "cy": 58, "r": 18, "fill": "#c45a20", "layer": "knob_global_inout" },
+        { "type": "Rect", "x": 379, "y": 42, "w": 2, "h": 14, "fill": "#f0e8d8", "layer": "knob_global_inout" },
+        { "type": "Text", "x": 380, "y": 92, "content": "INPUT", "font": "Helvetica", "size": 9, "fill": "#a09888", "anchor": "middle", "layer": "knob_global_inout" }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "knob_bias",
+      "state": "normal",
+      "children": [
+        { "type": "Ellipse", "cx": 440, "cy": 58, "r": 22, "fill": "#2a2420", "layer": "knob_bias" },
+        { "type": "Ellipse", "cx": 440, "cy": 58, "r": 18, "fill": "#a02828", "layer": "knob_bias" },
+        { "type": "Rect", "x": 439, "y": 42, "w": 2, "h": 14, "fill": "#f0e8d8", "layer": "knob_bias" },
+        { "type": "Text", "x": 440, "y": 92, "content": "BIAS", "font": "Helvetica", "size": 9, "fill": "#a09888", "anchor": "middle", "layer": "knob_bias" }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "eq_bank",
+      "state": "normal",
+      "children": [
+        { "type": "Rect", "x": 24, "y": 160, "w": 620, "h": 200, "fill": "#12100e", "layer": "eq_bank" },
+        { "type": "Rect", "x": 24, "y": 160, "w": 620, "h": 1, "fill": "#3a3530", "layer": "eq_bank" },
+        { "type": "Rect", "x": 24, "y": 359, "w": 620, "h": 1, "fill": "#3a3530", "layer": "eq_bank" },
+        { "type": "Rect", "x": 24, "y": 160, "w": 1, "h": 200, "fill": "#3a3530", "layer": "eq_bank" },
+        { "type": "Rect", "x": 643, "y": 160, "w": 1, "h": 200, "fill": "#3a3530", "layer": "eq_bank" }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "comp_row",
+      "state": "normal",
+      "children": [
+        { "type": "Rect", "x": 24, "y": 380, "w": 620, "h": 112, "fill": "#12100e", "layer": "comp_row" },
+        { "type": "Rect", "x": 24, "y": 380, "w": 620, "h": 1, "fill": "#3a3530", "layer": "comp_row" },
+        { "type": "Rect", "x": 24, "y": 491, "w": 620, "h": 1, "fill": "#3a3530", "layer": "comp_row" },
+        { "type": "Rect", "x": 24, "y": 380, "w": 1, "h": 112, "fill": "#3a3530", "layer": "comp_row" },
+        { "type": "Rect", "x": 643, "y": 380, "w": 1, "h": 112, "fill": "#3a3530", "layer": "comp_row" }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "fader_output_l",
+      "state": "normal",
+      "children": [
+        { "type": "Rect", "x": 680, "y": 160, "w": 48, "h": 280, "fill": "#0a0908", "layer": "fader_output_l" },
+        { "type": "Rect", "x": 698, "y": 180, "w": 12, "h": 220, "fill": "#1a1816", "layer": "fader_output_l" },
+        { "type": "Rect", "x": 694, "y": 300, "w": 20, "h": 28, "fill": "#2a6a3a", "layer": "fader_output_l" }
+      ]
+    },
+    {
+      "type": "Group",
+      "id": "fader_output_r",
+      "state": "normal",
+      "children": [
+        { "type": "Rect", "x": 748, "y": 160, "w": 48, "h": 280, "fill": "#0a0908", "layer": "fader_output_r" },
+        { "type": "Rect", "x": 766, "y": 180, "w": 12, "h": 220, "fill": "#1a1816", "layer": "fader_output_r" },
+        { "type": "Rect", "x": 762, "y": 300, "w": 20, "h": 28, "fill": "#2a6a3a", "layer": "fader_output_r" }
+      ]
+    },
+    {
+      "type": "Text",
+      "x": 760, "y": 140,
+      "content": "P455 MDN",
+      "font": "Helvetica",
+      "size": 13,
+      "fill": "#c0b8a8",
+      "anchor": "middle",
+      "layer": "06_LABELS"
+    }
+  ],
+  "materials": [
+    {
+      "id": "panel_texture",
+      "target_layer": "01_PANEL_BG",
+      "kind": "brush",
+      "params": { "noise": 0.04, "direction": "horizontal", "blend": "screen" },
+      "mask": "panel_bounds"
+    },
+    {
+      "id": "wood_rails",
+      "target_layer": "01_PANEL_BG",
+      "kind": "photo",
+      "params": { "grain": "wood", "opacity": 0.35 },
+      "mask": "outer_frame"
+    },
+    {
+      "id": "knob_metal",
+      "target_layer": "knob_global_inout",
+      "kind": "gradient",
+      "params": { "type": "radial", "highlight": "#ff8a40", "shadow": "#6a2808" },
+      "mask": "knob_face"
+    },
+    {
+      "id": "grain_overlay",
+      "target_layer": "07_OVERLAYS",
+      "kind": "noise",
+      "params": { "opacity": 0.06, "blend": "overlay" },
+      "mask": "full"
+    }
+  ],
+  "states": ["normal", "hover", "active", "bypass"],
+  "audit": "strict"
+}
