@@ -1,5 +1,8 @@
 # PIXEL-DSP v1.2 — P455 MDN Sidecar
 
+![gui](path/to/image.png)
+
+
 Deterministic vector geometry + raster material reconstruction of the **Pulsar Modular P455 MDN Sidecar** (Marc Daniel Nelson signature console summing plugin).
 
 **Illustrator owns geometry. Photoshop owns material. Neither crosses the line.**
